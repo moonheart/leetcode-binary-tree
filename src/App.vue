@@ -10,13 +10,12 @@
     </a-col>
   </a-row>
   <a-row>
-
+    <a-col :span="24">
+      <figure>
+        <v-chart class="chart" :option="chartData" autoresize/>
+      </figure>
+    </a-col>
   </a-row>
-  <div>
-  </div>
-  <figure>
-    <v-chart class="chart" :option="chartData" autoresize/>
-  </figure>
 </template>
 
 <script lang="ts">
