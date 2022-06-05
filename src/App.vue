@@ -58,7 +58,7 @@ function constructTree(array: (number | null)[] | null): TreeSeriesNodeItemOptio
       currNode.children.push(left);
       nodeQueue.push(left);
     } else {
-      let left = {name: "null"} as TreeSeriesNodeItemOption
+      let left = {name: "_"} as TreeSeriesNodeItemOption
       currNode.children.push(left);
       // nodeQueue.push(left);
     }
@@ -72,7 +72,7 @@ function constructTree(array: (number | null)[] | null): TreeSeriesNodeItemOptio
       currNode.children.push(right)
       nodeQueue.push(right);
     } else {
-      let right = {name: "null"} as TreeSeriesNodeItemOption
+      let right = {name: "_"} as TreeSeriesNodeItemOption
       currNode.children.push(right)
       // nodeQueue.push(right);
     }
